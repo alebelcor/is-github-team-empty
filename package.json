@@ -1,0 +1,51 @@
+{
+  "name": "is-github-team-empty",
+  "version": "1.0.0",
+  "description": "Check if a GitHub team is empty",
+  "keywords": [
+    "got",
+    "gh",
+    "github",
+    "team",
+    "api",
+    "request",
+    "http",
+    "https",
+    "get",
+    "url",
+    "uri",
+    "util",
+    "utility"
+  ],
+  "bugs": "https://github.com/alebelcor/is-github-team-empty/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Alejandro Beltrán",
+    "email": "alebelcor@gmail.com",
+    "url": "https://github.com/alebelcor"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "main": "index.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alebelcor/is-github-team-empty.git"
+  },
+  "scripts": {
+    "test": "nyc ava",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "dependencies": {
+    "gh-got": "^2.4.0"
+  },
+  "devDependencies": {
+    "ava": "^0.8.0",
+    "coveralls": "^2.11.6",
+    "nyc": "^5.0.0"
+  }
+}
