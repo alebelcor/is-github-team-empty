@@ -13,7 +13,7 @@ var getGotOptions = {
 };
 
 module.exports = function (teamId) {
-  return ghGot.get(getTeamUrl(teamId), getGotOptions())
+  return ghGot.get(getTeamUrl(teamId), getGotOptions)
     .then(filterResponse)
     .then(isGhTeamEmpty)
     .catch(console.error);
